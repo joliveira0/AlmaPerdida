@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Nosifer&display=swap');
+
+:root{
+    --branco: white;
+    --preto: black;
+    --azul-escuro: #0077b6;
+    --azul-claro: #48cae4;
+    --vermelho-sangue: rgb(160, 0, 0);
+    --amarelinho: rgb(255, 255, 119);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url(../img/pexels-krakograff-textures-124842124-30332202.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+#principal{
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#instrucoes{
+    padding: 20px;
+    margin-top: 100px;
+}
+
+strong {
+    color: var(--amarelinho);
+    font-size: large;
+    /* 48cae4 */
+}
+
+#principal > input{
+    background-color: transparent;
+    border: 2px solid var(--azul-escuro);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: var(--branco);
+    transition: 0.5s;
+}
+
+#principal > input:focus {
+    outline: none;
+    border: 2px solid var(--azul-claro); /* Adicionando destaque no foco */
+}
+
+#principal > button{
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--azul-escuro);
+    border-radius: 20px ;
+    transition: 0.5s ;
+    font-weight: bold;
+}
+
+#principal > button:hover{
+    cursor: pointer;
+    background-color: var(--azul-escuro);
+}
+
+
+@media (orientation: portrait){
+    #instrucoes{
+        padding: 35px;
+        letter-spacing: 2px;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
+}

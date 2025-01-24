@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="shortcut icon" href="img/icons.ico" type="image/x-icon">
+    <title>Alma Perdida</title>
+</head>
+<body>
+    <main>
+        <div id="instrucoes">
+            <h1>Bem Vindo, <div style="font-family: 'Nosifer', serif; color: var(--vermelho-sangue);">Vezhvenari rhaen!</div></h1>
+            <p>Se você chegou até aqui é porque quer entender o que aconteceu.</p>
+            <p>Siga as <strong>pistas</strong>, ache as <strong>palavras-chave</strong>, <strong>junte</strong> todas elas e <br><strong>entenda a história</strong> por trás disso tudo.</p>
+        </div>
+
+        <div id="principal">
+            <h2>Me diga seu nome</h2>
+            <input type="text" name="input-palavra" id="input-palavra" placeholder="Insira a palvra-chave">
+            <button id="checar">Desbloquear</button>
+        </div>
+
+        <button id="reset">resetar</button>
+    </main>
+
+    <script src="js/scrip.js"></script>
+    <script>
+        const enigmaConfig = {
+            id: "enigma1",
+            palavraChave: "alma perdida",
+            proximo: "enigma2.html",
+        };
+        initEnigma(enigmaConfig);
+
+    </script>
+</body>
+</html>
+
+
