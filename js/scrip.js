@@ -1,30 +1,30 @@
-function verificaPalavra() {
-     const palavraCerta = "Alma Perdida";
-     const inputPalavra = document.getElementById("input-palavra").value.trim().toLowerCase();
+// function verificaPalavra() {
+//      const palavraCerta = "Alma Perdida";
+//      const inputPalavra = document.getElementById("input-palavra").value.trim().toLowerCase();
 
 
-     if (inputPalavra === palavraCerta){
-         localStorage.setItem("palavra1", "acertada");
-         alert("Você acertou a primeira palavra!");
-         atualizarStatus();
-     } else {
-         alert("a palavra-chave não é essa. Tente Novamente")
-     }
- }
+//      if (inputPalavra === palavraCerta){
+//          localStorage.setItem("palavra1", "acertada");
+//          alert("Você acertou a primeira palavra!");
+//          atualizarStatus();
+//      } else {
+//          alert("a palavra-chave não é essa. Tente Novamente")
+//      }
+//  }
 
- function atualizarStatus(){
-     const progressoPalavra1 = localStorage.getItem("palavra1");
+ // function atualizarStatus(){
+ //     const progressoPalavra1 = localStorage.getItem("palavra1");
 
-     if (progressoPalavra1 === "acertada") {
-         console.log("você já descobriu a primeira palavra")
-     } else{
-         console.log("a primeira palavra ainda não foi acertada")
-     }
+ //     if (progressoPalavra1 === "acertada") {
+ //         console.log("você já descobriu a primeira palavra")
+ //     } else{
+ //         console.log("a primeira palavra ainda não foi acertada")
+ //     }
 
-     window.onload = function() {
-         atualizarStatus();
-     }
- }
+ //     window.onload = function() {
+ //         atualizarStatus();
+ //     }
+ // }
 
 function initEnigma({id, palavraChave, proximo}){
     const input = document.getElementById("input-palavra");
